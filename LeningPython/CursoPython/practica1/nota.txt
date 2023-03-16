@@ -1,0 +1,40 @@
+A) Diferencia en porcentaje entre el curso actual y:
+
+-el mas rapido de otros cursos
+-el mas lento de otros cursos
+-el promedio de los cursos
+
+B) porcentaje de material inservible que se reduce en:
+
+-el promedio de  los cursos
+-el curso actual (este curso)
+
+C) Ver 10 horas de este curso a cuantas de otros cursos equivale?
+
+
+
+time de los cursos
+
+--Este curso = 1.5h
+--Minimo 2.5h
+**Mi CRUDO 3.5h
+--Promedio 4h
+**CRUDO 5h 
+--Maximo 7h
+
+-----EJERCICIO 2-----
+
+A) pedirle a un usuario que diga cualquier texto real y:
+-- calcular cuanto tardaria en decir esa frase
+-- cuantas palabras dijo
+
+B) si se tarda mas de 1 minuto:
+-- decirle: "Ya para elvis tampoco te pedi un testamento".
+
+C) Elvis habla un 30% mas rapido: 
+-- Cuanto tardaria en decirlo
+
+Nota:
+1 segundo = 1 palabras
+Cuantos seg x palabras?
+
