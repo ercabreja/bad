@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 class LoginPage:
     
     # definimos los elementos de la página de inicio de sesión
-    username_field = (By.ID, 'username')
+    username_field = (By.CSS_SELECTOR, '#username')
     password_field = (By.ID, 'password')
     login_button = (By.ID, 'submit')
     logout_button = (By.XPATH, "//a[text()='Log out']")
@@ -48,3 +48,5 @@ class FormPage:
         self.driver.find_element(*self.phone_field).send_keys(phone)
         self.driver.find_element(*self.address_field).send_keys(address)
         self.driver.find_element(*self.submit_button).click()
+
+        

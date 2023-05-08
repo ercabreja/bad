@@ -1,5 +1,5 @@
 # importamos las librerías necesarias
-from selenium.webdriver.support.ui import WebDriverWait
+#from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from objets import LoginPage
@@ -13,6 +13,7 @@ class TestForm(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
+        
         
     def test_login_and_fill_form(self):
         # creamos instancias de las clases LoginPage y FormPage
@@ -36,8 +37,14 @@ class TestForm(unittest.TestCase):
         
         
         # verificamos que se haya enviado el formulario
-        message = self.driver.find_element(By.XPATH, "//p[text()='Gracias por tu encuesta.']").is_displayed
-        print("Formulario enviado exitosamente")
+        
+        message = self.driver.find_element(By.XPATH, "//p[text()='Gracias por tu encuesta.']").is_enabled()
+        
+        if message == True:
+            print("Formulario enviado exitosamente")
+            
+        else:
+            print ("No se logro validar el envio del formulario")
    
 
         
